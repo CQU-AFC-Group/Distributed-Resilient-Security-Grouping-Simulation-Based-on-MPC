@@ -1,0 +1,5 @@
+apf:
+  attractive_gain: 5.0 
+  repulsive_gain: 100.0
+  safe_distance: 1.0
+  goal_threshold: 0.3

@@ -1,0 +1,15 @@
+# 无人机航点配置
+# 起飞高度 h
+takeoff_height: 5.0
+
+# 起点坐标 [x, y, z]
+start_point: [2.0, 0.0, 5.0]
+
+# 终点坐标 [x, y, z]
+goal_point: [14.0, 0.0, 5.0]
+
+# 到达时间 t
+set_time: 40
+
+# 判定到达阈值
+goal_tolerance: 0.3

@@ -1,0 +1,65 @@
+<launch>
+  <rosparam file="$(find offboard_pkg)/config/params.yaml" command="load"/>
+  <rosparam file="$(find offboard_pkg)/config/obstacles.yaml" command="load"/>
+  <rosparam file="$(find offboard_pkg)/config/apf.yaml" command="load"/>
+  <rosparam file="$(find offboard_pkg)/config/uav_waypoints.yaml" command="load"/>
+  <rosparam file="$(find offboard_pkg)/config/formation_config.yaml" command="load"/>
+
+  <!-- 读取px4ctrl参数 -->
+  <rosparam command="load" file="$(find offboard_pkg)/config/ctrl_param_fpv.yaml" />
+
+  <!-- 独立的Topology Manager节点 -->
+  <node name="topology_manager" pkg="offboard_pkg" type="topology_manager_node" output="screen"/>
+
+  <!-- UAV 0 -->
+  <node pkg="offboard_pkg" type="uav_node" name="uav0_node" output="screen">
+    <param name="uav_name" value="uav0"/>
+  </node>
+
+  <!-- UAV 1 -->
+  <node pkg="offboard_pkg" type="uav_node" name="uav1_node" output="screen">
+    <param name="uav_name" value="uav1"/>
+  </node>
+
+  <!-- UAV 2 -->
+  <node pkg="offboard_pkg" type="uav_node" name="uav2_node" output="screen">
+    <param name="uav_name" value="uav2"/>
+  </node>
+
+  <!-- UAV 3 -->
+  <node pkg="offboard_pkg" type="uav_node" name="uav3_node" output="screen">
+    <param name="uav_name" value="uav3"/>
+  </node>
+
+  <!-- UAV 4 -->
+  <node pkg="offboard_pkg" type="uav_node" name="uav4_node" output="screen">
+    <param name="uav_name" value="uav4"/>
+  </node>
+
+  <!-- UAV 5 -->
+  <node pkg="offboard_pkg" type="uav_node" name="uav5_node" output="screen">
+    <param name="uav_name" value="uav5"/>
+  </node>
+
+  <!-- UAV 6 -->
+  <node pkg="offboard_pkg" type="uav_node" name="uav6_node" output="screen">
+    <param name="uav_name" value="uav6"/>
+  </node>
+
+  <!-- UAV 7 -->
+  <node pkg="offboard_pkg" type="uav_node" name="uav7_node" output="screen">
+    <param name="uav_name" value="uav7"/>
+  </node>
+
+  <!-- UAV 8 -->
+  <node pkg="offboard_pkg" type="uav_node" name="uav8_node" output="screen">
+    <param name="uav_name" value="uav8"/>
+  </node>
+
+  <!-- UAV 9 -->
+  <node pkg="offboard_pkg" type="uav_node" name="uav9_node" output="screen">
+    <param name="uav_name" value="uav9"/>
+  </node>
+
+  <!-- <node pkg="rviz" type="rviz" name="rviz" args="-d $(find offboard_pkg)/config/rviz_config.rviz" output="screen" /> -->
+</launch>

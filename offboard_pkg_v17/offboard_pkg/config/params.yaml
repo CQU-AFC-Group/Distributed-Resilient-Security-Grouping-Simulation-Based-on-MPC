@@ -1,0 +1,20 @@
+uav0_node:
+  neighbors: ["uav1", "uav9"]
+uav1_node:
+  neighbors: ["uav0", "uav2"]
+uav2_node:
+  neighbors: ["uav1", "uav3"]
+uav3_node:
+  neighbors: ["uav2", "uav4"]
+uav4_node:
+  neighbors: ["uav3", "uav5"]
+uav5_node:
+  neighbors: ["uav4", "uav6"]
+uav6_node:
+  neighbors: ["uav5", "uav7"]
+uav7_node:
+  neighbors: ["uav6", "uav8"]
+uav8_node:
+  neighbors: ["uav7", "uav9"]
+uav9_node:
+  neighbors: ["uav8", "uav0"]

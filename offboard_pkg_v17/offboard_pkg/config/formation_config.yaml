@@ -1,0 +1,15 @@
+formation:
+  type: "circle"        # 当前编队类型: circle, line
+  num_uavs: 10         # 无人机数量
+  
+  # 圆形编队配置
+  circle:
+    radius: 2.0        # 圆形编队半径
+    center: [0.0, 0.0, 0.0]  # 圆形编队中心
+  
+  # 直线编队配置  
+  line:
+    spacing: 2.0       # 直线编队间距
+    direction: "y"     # 直线方向: x 或 y
+    center: [0.0, 0.0, 0.0]  # 直线编队中心（用于确定0号无人机位置）
+    radius: 2.0        # 用于确定0号无人机在圆形编队中的位置（作为参考）

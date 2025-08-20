@@ -1,0 +1,73 @@
+<launch>
+  <rosparam file="$(find offboard_pkg)/config/params.yaml" command="load"/>
+  <rosparam file="$(find offboard_pkg)/config/obstacles.yaml" command="load"/>
+  <!-- UAV 0 -->
+  <node pkg="offboard_pkg" type="uav_node" name="uav0_node" output="screen">
+    <param name="uav_name" value="uav0"/>
+    <param name="offset_x" value="0.0"/>
+    <param name="offset_y" value="0.0"/>
+  </node>
+
+  <!-- UAV 1 -->
+  <node pkg="offboard_pkg" type="uav_node" name="uav1_node" output="screen">
+    <param name="uav_name" value="uav1"/>
+    <param name="offset_x" value="0.0"/>
+    <param name="offset_y" value="1.0"/>
+  </node>
+
+  <!-- UAV 2 -->
+  <node pkg="offboard_pkg" type="uav_node" name="uav2_node" output="screen">
+    <param name="uav_name" value="uav2"/>
+    <param name="offset_x" value="0.0"/>
+    <param name="offset_y" value="2.0"/>
+  </node>
+
+  <!-- UAV 3 -->
+  <node pkg="offboard_pkg" type="uav_node" name="uav3_node" output="screen">
+    <param name="uav_name" value="uav3"/>
+    <param name="offset_x" value="0.0"/>
+    <param name="offset_y" value="3.0"/>
+  </node>
+
+  <!-- UAV 4 -->
+  <node pkg="offboard_pkg" type="uav_node" name="uav4_node" output="screen">
+    <param name="uav_name" value="uav4"/>
+    <param name="offset_x" value="0.0"/>
+    <param name="offset_y" value="4.0"/>
+  </node>
+
+  <!-- UAV 5 -->
+  <node pkg="offboard_pkg" type="uav_node" name="uav5_node" output="screen">
+    <param name="uav_name" value="uav5"/>
+    <param name="offset_x" value="0.0"/>
+    <param name="offset_y" value="5.0"/>
+  </node>
+
+  <!-- UAV 6 -->
+  <node pkg="offboard_pkg" type="uav_node" name="uav6_node" output="screen">
+    <param name="uav_name" value="uav6"/>
+    <param name="offset_x" value="0.0"/>
+    <param name="offset_y" value="6.0"/>
+  </node>
+
+  <!-- UAV 7 -->
+  <node pkg="offboard_pkg" type="uav_node" name="uav7_node" output="screen">
+    <param name="uav_name" value="uav7"/>
+    <param name="offset_x" value="0.0"/>
+    <param name="offset_y" value="7.0"/>
+  </node>
+
+  <!-- UAV 8 -->
+  <node pkg="offboard_pkg" type="uav_node" name="uav8_node" output="screen">
+    <param name="uav_name" value="uav8"/>
+    <param name="offset_x" value="0.0"/>
+    <param name="offset_y" value="8.0"/>
+  </node>
+
+  <!-- UAV 9 -->
+  <node pkg="offboard_pkg" type="uav_node" name="uav9_node" output="screen">
+    <param name="uav_name" value="uav9"/>
+    <param name="offset_x" value="0.0"/>
+    <param name="offset_y" value="9.0"/>
+  </node>
+</launch>
